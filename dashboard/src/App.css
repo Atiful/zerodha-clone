@@ -1,0 +1,494 @@
+ /* navbar css */
+ .navbar{
+  height : 70px;
+  font-size: small;
+ }
+
+ /* here handleing the watchlist */
+ @media(min-width : 850px){
+  .handlescreenofWatchlist{
+    display: none;
+  }
+ }
+
+ 
+ 
+ @media(max-width : 850px){
+  .watchlist-app{
+     display: none;
+  }
+  .menu{
+    width: 100%;
+  }
+ }
+ 
+
+ h1 , p , h2 , h3 , h4 , h5{
+  margin : 0;
+  padding : 0;
+ }
+
+ /* color options  */
+ .first-color { 
+	background: #e4f1fe; 
+}
+	
+.second-color { 
+	background: #8dc6ff; 
+}
+
+.third-color { 
+	background: #22313f; 
+}
+
+.fourth-color { 
+	background: #34495e; 
+}
+
+ /* dashboard */
+ .margin , .PL{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap : 100px;
+ }
+
+ .profitOrloss{
+  color : green;
+ }
+
+ .profitpercent{
+  font-size: 0.8rem;
+ }
+
+ /* orders */
+ .orders > div{
+  width : 20%;
+  height : 20%;
+ }
+ .orders img{
+  width : 100%;
+  height : 100%;
+  opacity: 0.4;
+ }
+
+.orders{
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+/* holding */
+.order-table table tr th{
+  font-size: medium;
+  font-weight: 500;
+  padding : 2px 5px 3px 5px;
+  font-size: small;
+}
+
+.order-table{
+  max-height: 90vh;
+  overflow: auto;
+  width : 90%;
+}
+
+.order-table table{
+  background-color: rgba(128, 128, 128, 0.223);
+}
+ table , thead , th , td , tr{
+ padding : 0.7rem !important;
+ font-size: small;
+}
+
+.order-table::-webkit-scrollbar{
+  width : 4px;
+ height : 4px;
+}
+table{
+  border-radius: 15px;
+  margin : 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 
+              0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+table:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2), 
+              0 8px 10px rgba(0, 0, 0, 0.15);
+}
+.order-table::-webkit-scrollbar-track {
+  background: white; /* Color of the scrollbar track */
+}
+
+.order-table::-webkit-scrollbar-thumb {
+  background-color: grey; /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+thead th{
+  background-color: #598ec4;
+  position: sticky;
+  top : 0;
+}
+
+table tr:hover{
+  background-color: #8dc6ffb5;
+}
+
+table tr:nth-of-type(2n){
+  background-color: rgba(193, 211, 182, 0.523);
+}
+
+table tr:nth-of-type(2n):hover{
+  background-color: #e0e8f1b5;
+}
+
+
+.investemt-details{
+  
+  display: flex;
+  gap : 30px;
+  flex-wrap: wrap;
+  width :fit-content;
+  height: fit-content;
+  justify-content: center;
+  margin : 10px;
+  padding-top : 30px;
+}
+
+.investemt-details p{
+  font-size: small;
+  margin-top : 0.4rem;
+}
+
+.investemt-details .total-profitLoss h3{
+  color : green;
+}
+
+.investemt-details .total-profitLoss span{
+  font-size: small;
+}
+
+
+
+.holdings-new{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap : 20px;
+}
+
+.heading-table{
+  position: sticky;
+  top : 0px;
+}
+
+@media (max-width : 600px){
+  .holdings{
+    flex-wrap: wrap;
+  }
+}
+
+.profit , .up{
+  color : green;
+}
+
+.loss , .down{
+  color : red;
+}
+
+/* watchList */
+.watchlist{
+margin : 0;
+border-right: 1px solid black;
+}
+
+
+
+
+.watchlist .indices-container{
+  height : 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  background-color: #f4f5f7;
+  font-size: small;
+}
+
+.watchlist .indices-container div{
+  display: flex;
+  gap : 1rem;
+  flex-wrap: wrap;
+}
+
+.search-container{
+  /* width: 100%; */
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-container input{
+  width : 80%;
+  border : none;
+  padding : 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-size: small;
+}
+.search-container .counts{
+  font-size: small;
+  margin-right : 0.4rem;
+}
+
+.watchlist .list{
+  list-style-type: none;
+  padding : 0;
+  max-height: 100vh;
+  overflow-y : auto;
+}
+
+
+
+.watchlist .list li{
+  margin : 1rem 0 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  font-size: small;
+  padding : 0.3rem 0 0.3rem 0;
+}
+
+
+
+.listItem{
+  display: flex;
+  gap : 0.6rem;
+}
+
+/* Webkit Scrollbar Styles */
+.list::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.list::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Background color of the scrollbar track */
+}
+
+.list::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.list::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color on hover */
+}
+
+/* General scrollbar styles for other browsers */
+.list {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 #f1f1f1; /* Thumb and track color for Firefox */
+}
+
+
+
+
+.check{
+  display: flex;
+  width: 100%;
+  max-height: 100vh;
+}
+
+.check .watchlist-app{
+  min-width : 30%;
+}
+.check .menu{
+  min-width: 70%;
+  height : 100vh;
+  overflow-y: auto;
+}
+
+.menu::-webkit-scrollbar{
+  width : 0.2rem;
+}
+.menu::-webkit-scrollbar-track {
+  background-color: #ebe9e9;
+}
+
+
+.menu::-webkit-scrollbar-thumb {
+  background-color: #bbb6b6;
+  border-radius: 10px;
+}
+.error{
+  font-size: 1.2rem;
+  text-align: center;
+  text-justify: auto;
+}
+
+
+/* buywindow validation */
+.validation-buy{
+  font-size: 0.9rem;
+  color : red;
+}
+
+.stock-not-avaibale{
+  font-size: small;
+  color : red;
+}
+
+.green{
+  color : green;
+}
+.red{
+  color : red;
+}
+.red-error {
+  color : red;
+  font-size: small;
+  padding : 0.3rem;
+}
+/* syleing the signup page */
+.loader{
+  position: fixed; /* Cover the entire screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.392); /* Semi-transparent white */
+  z-index: 1000; /* Ensure it's on top of all elements */
+  display: flex;
+  background-image: url('/images/loader.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px); /* Blurs the background */
+}
+
+.form-signUp{
+  /* background-color: #598ec4; */
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form-signUp h1{
+  color : rgb(24, 35, 33);
+}
+
+.green{
+  color : green;
+}
+
+a{
+  color: rgb(25, 18, 18);
+}
+/* .flash{
+  position: fixed;
+  top : 100px;
+  left : 10px;
+  height : 200px;
+  width : 1000px;
+  background-color: black;
+} */
+
+
+/* dashboard */
+.dashboard .user-content{
+  width : 100%;
+  min-height : 150px;
+  background-color: rgb(212, 216, 216);
+  border-radius: 1rem;
+  padding : 1rem;
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+.user-content .profilePic{
+  height : 6.3rem;
+  width : 6.3rem;
+}
+.user-content .profilePic img{
+  height : inherit;
+  width : inherit;
+  border-radius: 50%;
+}
+
+.margin{
+  min-height : 150px;
+  width : 100%;
+  border-radius: 1rem;
+  padding : 1rem;
+  background-color: rgb(214, 232, 219);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap : 50px;
+}
+
+
+.PL{
+  min-height : 100px;
+  width : 100%;
+  margin : 0px !important;
+  padding : 1rem;
+  border-radius: 1rem;
+  background-color: rgb(222, 219, 213);
+  display: flex;
+  justify-content: center;
+}
+
+.pl-content{
+  min-height : 70%;
+  min-width : 60%;
+  background-color: white;
+  padding : 1rem;
+  border-radius: 1rem;
+}
+
+.pl-content p{
+  margin : 1rem;
+  display: flex;
+  justify-content: space-between;
+  color : rgba(0, 0, 0, 0.717);
+}
+
+.pl-content span{
+  font-weight: 800;
+  text-align: right;
+  margin-left : 1rem;
+  margin-right : 1rem;
+  color : black;
+}
+
+
+.google-button{
+  text-align: center;
+}
+.google-login{
+  border : 1px solid rgba(0, 0, 0, 0.872);
+  border-radius: 0.4rem;
+  padding : 0.5rem 0.5rem;
+}
+.google-login img{
+  height : 1.4rem;
+  width: 1.4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.holding-button{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* #analytics{
+   
+} */
+.logo img{
+  height : 2.3rem;
+  width : 2.3rem;
+  border-radius: 50%;
+}
