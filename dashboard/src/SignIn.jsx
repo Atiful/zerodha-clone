@@ -34,8 +34,6 @@ function SignIn() {
         e.preventDefault();
   
         const response = await apilogin(formData);
-        console.log(response.data.user);
-        console.log(response.status);
         if(response?.data?.user){
           setUser((prev) => {
             return {...response?.data?.user};
@@ -50,6 +48,7 @@ function SignIn() {
             return {...prev , message : "Invalid Credientials or user does not exisit" , submit : false};
            });
         }
+        setIsLoading(false); 
     }
 
 
@@ -64,7 +63,7 @@ function SignIn() {
 
         {error.message && <div className="alert alert-danger" role="alert">
           <p>{error.message}</p>
-</div>}
+                  </div>}
 
        
 
