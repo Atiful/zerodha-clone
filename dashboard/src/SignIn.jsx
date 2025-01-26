@@ -1,11 +1,10 @@
 import { useState , useContext} from "react";
-import "../App.css";
-import {apilogin} from "../Helper/api.js"
+import "./App.css";
+import {apilogin} from "./Helper/api.js"
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import userContext from "../contextAPI/userContext.js";
-import axios from "axios";
-import { apiGoogleAuth } from "../Helper/api.js";
+import userContext from "./contextAPI/userContext.js";
+import { apiGoogleAuth } from "./Helper/api.js";
 
 function SignIn() {
 
@@ -35,9 +34,6 @@ function SignIn() {
   
         const response = await apilogin(formData);
         if(response.status == 200){
-          setIsLogin((prev) => {
-            return {...user};
-          });
           setIsLogin(true);
           updateUser();
           navigate("/");

@@ -11,10 +11,9 @@ import PageNotFound from "./PageNotFound";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {GeneralContextProvider} from "./GeneralContext";
 import ErrorBoundary from "./Error/ErrorBoundry";
-import SignUp from "./User/signUp";
-import Signin from "./User/SignIn";
+import SignIn from "./signIn";
+import SignUp from "./signUp";
 import UserContextProvider from "./contextAPI/userContextProvider";
-// import ProtectedRoute from "./ProtectedRoute";
 function App() {
   return ( 
     <>
@@ -38,7 +37,7 @@ function App() {
         <Route path = "/Watchlist" element = {<ErrorBoundary><GeneralContextProvider><Watchlist></Watchlist></GeneralContextProvider></ErrorBoundary>}></Route>
         <Route path = "/Otp" element = {<Funds></Funds>}></Route>
         <Route path = "/signUp" element = {<SignUp></SignUp>}></Route>
-        <Route path = "/signIn" element = {<Signin></Signin>}></Route>
+        <Route path = "/signIn" element = {<SignIn></SignIn>}></Route>
         <Route  path = "*" element = {<PageNotFound></PageNotFound>}></Route>
     </Routes>
     </ErrorBoundary>

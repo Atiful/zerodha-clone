@@ -1,12 +1,12 @@
 import { useState } from "react";
-import "../App.css";
-import { handleSignUpForm , generateRandomNumber} from "../Helper/helper";
-import {handleApiSignUpForm , apiGoogleAuth , apiSendMail} from "../Helper/api.js"
+import "./App.css";
+import { handleSignUpForm , generateRandomNumber} from "./Helper/helper.js";
+import {handleApiSignUpForm , apiGoogleAuth , apiSendMail} from "./Helper/api.js"
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { useContext } from "react";
-import userContext from "../contextAPI/userContext.js";
-import Otp from "../Otp.jsx";
+import userContext from "./contextAPI/userContext.js";
+import Otp from "./Otp.jsx";
 
 function SignUp() {
     const navigate = useNavigate();

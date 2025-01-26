@@ -10,10 +10,9 @@ const UserContextProvider = ({children}) => {
     const updateUser = async () => {
         try {
             const response = await isLoginOrNot();
-
-            if (response?.data) {
+            if (response?.data?.user) {
                 setUser((prev) => {
-                    return response.data.user;
+                    return {...response.data.user};
                 });
                 setIsLogin(true);
             } else {

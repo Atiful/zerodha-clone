@@ -20,9 +20,6 @@ function Dashboard() {
 
 
 
-//  console.log(user);
- 
-
 
  let handleform = (e) => {
        handleformData(e , setAddMoney , setError);
