@@ -112,7 +112,9 @@ app.use("/holding", holdingRouter);
 app.use("/common", commonRouter);
 app.use("/user", userRouter);
 
-
+app.get("/" , (req , res) => {
+  res.send("index route");
+});
 
 app.get("/sendMail/:otp/:mail/:username" , async (req , res) => {
   let {otp , mail , username} = req.params;
