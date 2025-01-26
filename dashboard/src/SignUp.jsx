@@ -126,7 +126,7 @@ function SignUp() {
         
 </div>
 
-<p className="my-2">Already a User ? <NavLink to = "/Signin" style = {{color : "blue"}}>Sign In</NavLink></p>
+<p className="my-2">Already a User ? <NavLink to = "/SignIn" style = {{color : "blue"}}>Sign In</NavLink></p>
 
           <button  className = "btn btn-primary" type="submit" disabled={!otpchecking}>
             {isLoading ? <div className="loader"></div> : "submit"}

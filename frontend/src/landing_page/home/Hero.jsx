@@ -13,7 +13,7 @@ function Hero(){
             <h1>Invest in everything</h1>
             <p className="text-center">Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.</p>
 
-             <a href="http://localhost:5173/signUp" className="hero btn btn-primary mt-3 p-2 fs-5">Sign up now</a>
+             <a href="https://investwise-dashboard.onrender.com/SignUp" className="hero btn btn-primary mt-3 p-2 fs-5">Sign up now</a>
             </div>
         </div>
     

@@ -96,7 +96,7 @@ function SignIn() {
 
 
 
-<p className="my-2">User not Regisered ? <NavLink to = "/signUp" style = {{color : "blue"}}>Sign Up</NavLink></p>
+<p className="my-2">User not Regisered ? <NavLink to = "/SignUp" style = {{color : "blue"}}>Sign Up</NavLink></p>
 
           <button  className = "btn btn-success" type="submit" disabled={error.submit}>
             {isLoading ? <div className="loader"></div> : "submit"}

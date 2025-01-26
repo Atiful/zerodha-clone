@@ -36,8 +36,8 @@ function App() {
         <Route path = "/Positions" element = {<Positions></Positions>}></Route>
         <Route path = "/Watchlist" element = {<ErrorBoundary><GeneralContextProvider><Watchlist></Watchlist></GeneralContextProvider></ErrorBoundary>}></Route>
         <Route path = "/Otp" element = {<Funds></Funds>}></Route>
-        <Route path = "/signUp" element = {<SignUp></SignUp>}></Route>
-        <Route path = "/signIn" element = {<SignIn></SignIn>}></Route>
+        <Route path = "/SignUp" element = {<SignUp></SignUp>}></Route>
+        <Route path = "/SignIn" element = {<SignIn></SignIn>}></Route>
         <Route  path = "*" element = {<PageNotFound></PageNotFound>}></Route>
     </Routes>
     </ErrorBoundary>

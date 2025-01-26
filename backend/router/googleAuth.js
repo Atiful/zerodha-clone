@@ -11,7 +11,7 @@ const sendMail = require("../config/mailConfig.js");
 passport.use(new GoogleStrategy({
   clientID: process.env.GOOGLE_CLIENT_ID,
   clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-  callbackURL: "http://localhost:3000/auth/google/callback"
+  callbackURL: "https://inverstwise-backend.onrender.com/auth/google/callback"
 },
 async (accessToken, refreshToken , profile, cb) => {
   let userDetails = await user.findOne({email : profile.emails[0].value});
@@ -65,7 +65,7 @@ router.get('/', passport.authenticate('google', { scope: ['profile' , 'email'] }
     router.get('/callback', 
         passport.authenticate('google' , {failureRedirect : "http://localhost:5173/notFound"}),
         function(req, res) {
-          res.redirect("http://localhost:5173/");
+          res.redirect("https://investwise-dashboard.onrender.com/");
         });
 
 
