@@ -12,9 +12,10 @@ function Dashboard() {
  let [holdings , setHoldings] = useState({});
  let [holdingDetails , setHoldingDetails] = useState({totalholding : 0 , investment : 0 , profit : 0});
 //  let [flash , setFalsh] = useState({success : '' , error : ''});
- useEffect( () => {
+ useEffect(() => {
+   
     setLoader(true);
-   //   updateUser();
+     updateUser();
     setLoader(false);
  } , []);
 

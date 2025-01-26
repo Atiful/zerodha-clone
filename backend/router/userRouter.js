@@ -7,6 +7,8 @@ const passport = require("passport");
 
 
 router.get("/isLogin",  (req , res) => {
+  console.log("isLogin");
+  console.log(req.user);
     res.json({user : req.user});
   });
   

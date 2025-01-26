@@ -117,6 +117,13 @@ app.get("/" , (req , res) => {
   res.send("index route");
 });
 
+
+app.get("/check" , (req , res) => {
+  console.log(req.isAuthenticated());
+  console.log(req.user);
+  res.send({user : req.user});
+});
+
 app.get("/sendMail/:otp/:mail/:username" , async (req , res) => {
   let {otp , mail , username} = req.params;
   maildetials(username , " " , mail , otp);

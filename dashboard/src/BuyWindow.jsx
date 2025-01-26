@@ -68,7 +68,7 @@ function BuyWindow({stock , mode}){
                   </div>
             }
               <div className="form-group">
-              {/* <NavLink to = "/">Add Money</NavLink> */}
+              {/* <NavLink to = "/">Add Money</NavLink> */} 
                 <label htmlFor="quantity" className="col-form-label">Quantity</label>
                 <input type="number" value = {buyform.quantity} name = "quantity" onChange = {handlebuyform} className="form-control"/>
                 {quantityvalidation && <span className="validation-buy">Quantity must be greater than 0</span>}
