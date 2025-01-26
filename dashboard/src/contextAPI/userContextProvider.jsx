@@ -7,9 +7,13 @@ const UserContextProvider = ({children}) => {
     const [user, setUser] = useState(null);
     const [isLogin, setIsLogin] = useState(false);
    const [loader , setLoader] = useState(true);
+   
     const updateUser = async () => {
         try {
             const response = await isLoginOrNot();
+            console.log(response);
+            console.log(user);
+            console.log(isLogin);
             if (response?.data?.user) {
                 setUser((prev) => {
                     return {...response.data.user};

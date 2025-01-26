@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import userContext from "./contextAPI/userContext.js";
 import { apiGoogleAuth } from "./Helper/api.js";
+import Loader from "./HelperComponent/Loader.jsx";
 
 function SignIn() {
 
@@ -33,9 +34,14 @@ function SignIn() {
         e.preventDefault();
   
         const response = await apilogin(formData);
-        if(response.status == 200){
+        console.log(response.data.user);
+        console.log(response.status);
+        if(response?.data?.user){
+          setUser((prev) => {
+            return {...response?.data?.user};
+          })
           setIsLogin(true);
-          updateUser();
+        //  await  updateUser();
           navigate("/");
       }
         else{

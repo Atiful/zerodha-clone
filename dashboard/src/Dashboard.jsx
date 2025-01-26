@@ -14,11 +14,13 @@ function Dashboard() {
 //  let [flash , setFalsh] = useState({success : '' , error : ''});
  useEffect( () => {
     setLoader(true);
-     updateUser();
+   //   updateUser();
     setLoader(false);
  } , []);
 
 
+ console.log(user);
+ console.log(isLogin);
 
 
  let handleform = (e) => {
@@ -29,7 +31,7 @@ function Dashboard() {
     setLoader(true);
     e.preventDefault();
     const response = await UpdateBalance(isLogin , user , addMoney);
-    await updateUser();
+   //  await updateUser();
     setLoader(false);
  }
 
