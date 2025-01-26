@@ -11,8 +11,8 @@ import PageNotFound from "./PageNotFound";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {GeneralContextProvider} from "./GeneralContext";
 import ErrorBoundary from "./Error/ErrorBoundry";
-import SignIn from "./signIn";
-import SignUp from "./signUp";
+import SignIn from "./SignIn";
+import SignUp from "./SignUp";
 import UserContextProvider from "./contextAPI/userContextProvider";
 function App() {
   return ( 
