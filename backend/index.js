@@ -64,7 +64,7 @@ app.use(express.json());
 app.use(session({
   secret: 'keyboard cat',  
   resave: false,           
-  saveUninitialized: true, 
+  saveUninitialized: false, 
   store: MongoStore.create({
     mongoUrl: process.env.MONGO_URL,
     collectionName: 'sessions', 
