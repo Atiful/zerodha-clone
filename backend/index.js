@@ -73,7 +73,7 @@ app.use(session({
   }),
   cookie: {
     secure : true,
-     httpOnly: true,
+     // httpOnly: true,
     sameSite: 'none',
     maxAge: 1 * 24 * 60 * 60 * 1000 // Session cookie expiry (14 days in milliseconds)
   }
