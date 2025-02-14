@@ -51,7 +51,8 @@ app.use(
       'http://localhost:5173',
       'http://localhost:3000',
       'http://localhost:5174/',
-      'https://investwise-backend.onrender.com',
+      // 'https://investwise-backend.onrender.com',
+      'https://inverstwise-backend.onrender.com
       // 'https://your-domain.com', // Add production URL here
     ],
   }),
